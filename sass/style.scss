@@ -1,0 +1,72 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+      
+}
+
+
+// SCROLL BAR
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(73, 73, 73, 0.466); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
+
+
+
+
+
+
+// SETTING THE BACKGROUND COLOR
+.setbakground{
+//     background: #00B4DB;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+// STYLE FOR THE NAVABAR
+nav{
+    
+    & #hove >div:hover{
+    background: rgba(236, 242, 247, 0.336);
+    }
+}
+
+@import 'home';
+@import 'media';
+
+
+
+
+
+
+
+

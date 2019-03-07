@@ -1,0 +1,173 @@
+$btn-color:#295cd3;
+
+
+// SHOWCASE AREA
+#showcase{
+
+    width:100%;
+    height:80vh;
+    color:#fff;
+    & .hitman{
+margin-top:10rem;
+    }
+    & .particle-wrapper{
+width: 100%;
+height: 100%;
+position: relative;
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+    }
+    & .searches{
+        span{
+            background:transparent; 
+            border:none;
+        }
+        img{
+            max-width: 1.5rem;
+        }
+        .form-control:focus{
+            
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+
+    }
+}
+
+// EARN SECTION
+#earn-section{
+margin-top:4rem;
+& .collector{
+    margin-top:4rem;
+    img{
+        max-width:3rem;
+        height: 3rem;
+    }
+    & p{
+        font-size:.9rem;
+    }
+}
+
+}
+// FEATURED SECTION
+
+#featured-section{
+margin-top:3.5rem;
+& p{
+font-size: .8rem;
+}
+
+
+
+
+}
+#gaming-section{
+margin-top:3.5rem;
+& p{
+font-size: .8rem;
+}
+
+
+
+
+}
+
+// CUT EDGE
+#cut-edge{
+width:100%;
+height: 7rem;
+background: #fff;
+clip-path: polygon(0 0,100% 0,100% calc(100% - 5vw),0 100%);
+margin-bottom: -7vw;
+}
+
+
+
+
+
+// TOP STORIES
+.top{
+    margin-top:5.5rem;
+}
+#top-stories{
+    width:100%;
+    height:100%;
+    
+    
+    & img{
+        border-radius:100%;
+         max-width: 6rem;
+          height: 6rem;
+    }
+    & .cards-wrapper{
+        width:100%;
+        height: 7rem;
+    } 
+    & p{
+
+font-size:.9rem;
+
+    }
+    & .tool i{
+        font-size:1.3rem;
+        cursor: pointer;
+    }
+    & .amount{
+        font-size:1.5rem;
+    }
+}
+
+
+// Review section
+#review-section{
+width:100%;
+height:100%;
+
+background:#ff3f64;
+clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+ & img{
+
+     max-width:4rem;
+     
+     height: 3.6rem;
+     
+ }
+ 
+
+
+}
+// press-section
+#press-section{
+width:100%;
+height:100%;
+& img{
+    max-width: 8rem;
+    height: 8rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+// MODAL DESIGNING
+.modal-body{
+    & img{
+max-width:1.5rem;
+    }
+    & input[type="submit"]{
+background: $btn-color;
+
+    }
+    
+}
