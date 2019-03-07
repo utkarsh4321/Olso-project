@@ -215,6 +215,9 @@ $(document).on('ready',function(){
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+// AOS INITILIZATION
+
+  AOS.init();
 
 
 
