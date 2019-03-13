@@ -1,0 +1,57 @@
+/*----------------------
+
+DASHBOARD SECTION STYLE
+
+------------------------*/
+
+#dashboard{
+    .actives{
+        color:rgb(38, 63, 172);
+        font-weight: bolder;
+        
+        }
+& ul{
+
+li{
+border:none;
+padding:.4rem 0;
+}
+
+
+}
+
+& .gender{
+width:20%;
+
+
+
+}
+.phones{
+& h6{
+    font-weight: bolder;
+}
+& a{
+    font-size:.9rem;
+}
+
+
+}
+.fa-lock{
+    font-size:.7rem;
+}
+}
+
+
+
+// MEDIA QUERY FOR THE DASHBOARD
+@include mediasm{
+#dashboard{
+    & .gender{
+        width:100%;
+    }
+}
+
+
+
+}
+
