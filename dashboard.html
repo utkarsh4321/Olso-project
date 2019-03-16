@@ -14,7 +14,7 @@
 </head>
 <body>
  <!-- NAVBAR  -->
- <nav class="navbar navbar-expand-md navbar-dark setbakground sticky-top">
+ <nav class="navbar navbar-expand-md navbar-dark setbakground sticky-top" id="navbars">
         <div class="container py-1">
         <a class="navbar-brand" href="#">OLSO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,13 +69,20 @@
 <div class="row mx-auto">
 <div class="col-md-3 mb-4">
   <ul class="list-group text-secondary">
-    <li class="list-group-item actives"><i class="fas fa-user-edit"></i><span class="ml-2"> Edit Profile</span></li>
-    <li class="list-group-item"><i class="fas fa-images"></i><span class="ml-2">Photos</span></li>
-    <li class="list-group-item"><i class="fas fa-user-shield"></i><span class="ml-2">Trust and Verification</span></li>
-    <li class="list-group-item"><i class="fas fa-eye"></i><span class="ml-2">Reviews</span></li>
-    <li class="list-group-item"><i class="fas fa-address-card"></i><span class="ml-2">Reference</span></li>
+    <li class="list-group-item">
+      <a href="./dashboard.html" class="actives"><i class="fas fa-user-edit"></i><span class="ml-2">Edit Profile</span>
+      </a></li>
+    <li class="list-group-item">
+      <a href="./photos.html"><i class="fas fa-images"></i><span class="ml-2">Photos</span></a></li>
+    <li class="list-group-item"><a href="./trust.html">
+        <i class="fas fa-user-shield"></i><span class="ml-2">Trust and Verification</span>
+      </a></li>
+    <li class="list-group-item">
+      <a href="./reviews.html"><i class="fas fa-eye"></i><span class="ml-2">Reviews</span></a></li>
+    <li class="list-group-item">
+      <a href="./reference.html"><i class="fas fa-address-card"></i><span class="ml-2">Reference</span></a></li>
   </ul>
-  <button class="btn btn-block btn-outline-secondary mt-4">View Profile</button>
+  <a class="btn btn-block btn-outline-secondary mt-4" href="./profile.html">View Profile</a>+
 </div>
 <div class="col-md-9">
   <div class="card">
@@ -109,7 +116,7 @@
         <div class="row mb-md-4 mb-3">
           <label class="col-md-2 pr-md-0 text-md-right mt-md-2" for="inlineFormCustomSelectPref">I am <span><i class="fas fa-lock ml-1 text-danger" data-toggle="tooltip" data-placement="top" title="Private"></i></span> </label>
 <div class="col-md-10">
-  <select class="custom-select gender my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+  <select class="form-control gender my-1 mr-sm-2" id="inlineFormCustomSelectPref">
     <option selected>Gender</option>
     <option value="1">Male</option>
     <option value="2">Female</option>
@@ -128,7 +135,7 @@
 <div class="col-md-10">
  <div class="row">
    <div class="col-md-3 col pr-1">
-    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefs1">
+    <select class="form-control my-1 mr-sm-2" id="inlineFormCustomSelectPrefs1">
       <option selected>December</option>
       <option value="1">March</option>
       <option value="2">April</option>
@@ -136,7 +143,7 @@
     </select>
    </div>
    <div class="col-md-2 col px-0">
-    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefs2">
+    <select class="form-control my-1 mr-sm-2" id="inlineFormCustomSelectPrefs2">
       <option selected>12</option>
       <option value="1">20</option>
       <option value="2">21</option>
@@ -144,7 +151,7 @@
     </select>
    </div>
    <div class="col-md-2 col pl-1">
-    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPrefs3">
+    <select class="form-control my-1 mr-sm-2" id="inlineFormCustomSelectPrefs3">
       <option selected>1990</option>
       <option value="1">2001</option>
       <option value="2">1996</option>
@@ -179,9 +186,9 @@
   </small>
   <div class="mt-3 d-flex justify-content-between"><h6 class="text-dark">+91********24</h6>
   <a href="#">Remove</a></div>
-  <a href="#">Add Phone number</a>
+  <div id="add-phone">Add Phone number</div>
 <!-- PHONE CARD -->
-<div class="row d-none">
+<div class="row mt-3" id="add-phone-users" style="display:none;">
 <div class="col-md-8">
   <div class="card">
     <div class="card-body">
@@ -241,7 +248,7 @@
 <div class="row mb-md-4 mb-3">
   <label class="col-md-2 pr-md-0 text-md-right mt-md-2" for="inlineFormCustomSelectPref"> Language</label>
 <div class="col-md-10">
-<select class="custom-select gender my-1 mr-sm-2" id="inlineFormCustomSelectPrefss">
+<select class="form-control gender my-1 mr-sm-2" id="inlineFormCustomSelectPrefss">
 <option selected>English</option>
 <option value="1">Hindi</option>
 <option value="2">Marathi</option>
@@ -258,7 +265,7 @@
 <div class="row mb-md-4 mb-3">
   <label class="col-md-2 pr-md-0 text-md-right mt-md-2" for="inlineFormCustomSelectPref">Currency</label>
 <div class="col-md-10">
-<select class="custom-select gender my-1 mr-sm-2" id="inlineFormCustomSelectPrefCurrency">
+<select class="form-control gender my-1 mr-sm-2" id="inlineFormCustomSelectPrefCurrency">
 <option selected>India rupee</option>
 <option value="1">Japanene yen</option>
 <option value="2">Hong kong dollar</option>
@@ -310,15 +317,226 @@
       
       </div>
         
-      </form>
+      
     </div>
+  </div>
+<!-- OPTIONAL CARDED STARTED -->
+<div class="card mt-4">
+  <div class="card-header">
+    Optional
+  </div>
+  <div class="card-body">
+    <!-- SCHOOL -->
+    <div class="row mb-md-4 mb-3">
+      <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPrefs10">School</label>
+<div class="col-md-10">
+<input type="text" class="form-control">
+
+</div>
+  </div>
+  <!-- WORK -->
+    <div class="row mb-md-4 mb-3">
+      <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref11">Work</label>
+<div class="col-md-10">
+<input type="text" class="form-control" placeholder="company name or job title">
+
+</div>
+  </div>
+  <!-- Time Zone -->
+  <div class="row mb-md-4 mb-3">
+      <label class="col-md-2 pr-md-0 text-md-right mt-md-2" for="inlineFormCustomSelectPref">Time Zone</label>
+<div class="col-md-10">
+<select class="form-control my-1 mr-sm-2" id="inlineFormCustomSelectPref12">
+<option selected></option>
+<option value="1">(GMT-08:00) Arizona</option>
+<option value="2">(GMT-06:00) Central America</option>
+<option value="3"></option>
+</select>
+<small class="form-text text-muted">
+Your home time zone.
+</small>
+</div>
+    </div>
+<!-- LANGAUGE -->
+<div class="row mb-md-4 mb-3">
+    <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref123">Language</label>
+<div class="col-md-10">
+<div class="text-secondary mb-2">None</div>
+<div class="add-btn" data-toggle="modal" data-target="#exampleModalLong1"><i class="fas fa-plus mr-1 text-secondary"></i>Add More</div>
+<small class="form-text text-muted">
+    Add any languages that others can use to speak with you on Airbnb
+    </small>
+</div>
+</div>
+
+<!-- VAT ID NUMBER -->
+<div class="row mb-md-4 mb-3">
+    <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref113">VAT Number</label>
+<div class="col-md-10">
+
+<div class="add-btn"  data-toggle="modal" data-target="#exampleModalLong2"><i class="fas fa-plus mr-1 text-secondary"></i>Add Vat ID Number</div>
+<small class="form-text text-muted">
+    For European Union users or users in other countries for which VAT applies, VAT will be assessed on our Service Fees. If you live in a country where we need to charge VAT, you will not be charged VAT if you enter a valid VAT ID Number. Visit VAT FAQs »
+    </small>
+</div>
+</div>
+<!-- ADD CONTACT -->
+<div class="row mb-md-4 mb-3">
+    <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref115">Emergency Contact<span><i class="fas fa-lock ml-1 text-danger" data-toggle="tooltip" data-placement="top" title="Private"></i></span> </label>
+<div class="col-md-10">
+
+<div class="add-btn" id="add-contact"><i class="fas fa-plus mr-1 text-secondary" ></i>Add contact</div>
+<div id="add-users" style="display:none;">
+  <div>
+<hr>
+<form>
+<div class="row">
+  
+  <div class="col-md-6 pr-md-1">
+      <div class="form-group">
+          <label for="exampleInputPassword1">Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+  </div>
+  <div class="col-md-6 pl-md-1">
+      <div class="form-group">
+          <label for="exampleInputPassword1">Relationship</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+  </div>
+</div>
+ 
+<div class="row">
+  <div class="col-md-4 pr-md-1">
+      <div class="form-group mb-0 mb-md-auto">
+          <label for="exampleFormControlSelect3">Phone</label>
+          <select class="form-control" id="exampleFormControlSelect3">
+            <option>United State (+1)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+  </div>
+  <div class="col-md-8 pl-md-1">
+    <div class="form-group">
+        <label for="exampleFormControlSelect4"></label>
+<input type="number" class="form-control mt-md-2">
+
+
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+ <div class="row">
+   <div class="col-md-6 pr-md-1">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+
+
+   </div>
+   <div class="col-md-6 pl-md-1">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Preferred Language</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>Dansk</option>
+              <option>Catala</option>
+              <option>Polsiki</option>
+            </select>
+        </div>
+   </div>
+ </div>
+<button class="btn btn-danger px-3">Add</button>
+  </form>
+
+
+<hr>
+</div>
+
+
+
+
+<small class="form-text text-muted">
+    Give our Customer Experience team a trusted contact we can alert in an urgent situation.
+    </small>
+</div>
+</div>
+</div>
+<!-- ADD SHIPING ADDRESS -->
+<!-- <div class="row mb-md-4 mb-3">
+    <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref1156">Shipping Address<span><i class="fas fa-lock ml-1 text-danger" data-toggle="tooltip" data-placement="top" title="Private"></i></span> </label>
+<div class="col-md-10">
+
+<div class="add-btn" id="add-shipping"><i class="fas fa-plus mr-1 text-secondary"></i>Add shipping address</div>
+
+<div class="mt-4" id="add-shipping-users" style="display:none;">
+<div class="card">
+  <div class="card-body">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Country</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+              <option>India</option>
+              <option>Us</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+        </div>
+<div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Address Line 1</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+  </div>
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Address Line 2</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+  </div>
+
+
+
+</div>
+<div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">City / Town / District</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+  </div>
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">State / Province / County / Region</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+  </div>
+
+
+
+</div>
+<div class="form-group">
+    <label for="exampleFormControlInput1">ZIP / Postal Code</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1">
+  </div>
+<button class="btn btn-block btn-danger">Save</button>
   </div>
 </div>
 
-</div>
-
-
-
 
 
 
@@ -329,33 +547,95 @@
 
 
 
+</div>
+</div> -->
+<!-- NEW GUEST PROFILE -->
+<div class="row mb-md-4 mb-3">
+    <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref1157">Guest Profiles<span><i class="fas fa-lock ml-1 text-danger" data-toggle="tooltip" data-placement="top" title="Private"></i></span> </label>
+<div class="col-md-10">
+
+<div class="add-btn" id="add-guest"><i class="fas fa-plus mr-1 text-secondary"></i>Add new guest profile</div>
+
+<div class="mt-4" id="add-guest-users" style="display:none;">
+    <hr>
+<div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">First name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+
+
+
+  </div>
+  <div class="col-md-6">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Last name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+
+
+
+  </div>
+  
+      
+  
+</div>
+<div class="form-group">
+    <label for="exampleFormControlInput1">Nationality</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+        <option>Select nationality</option>
+        <option>Us</option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+  </div>
+
+</div>
+<hr>
 
 
 
 
 
+
+<small class="form-text text-muted">
+    This information is only required when you travel to China and will not be shared with your hosts and other guests.
+    </small>
+</div>
+</div>
+
+</div>
+</div>
+<!-- OPTIONAL CARD ENDED -->
+<!-- WORK TRAVEL CARD STARTED -->
+<!-- <div class="card mt-4">
+  <div class="card-header">
+    Work Travel
+  </div>
+  <div class="card-body">
+      <div class="row mb-md-4 mb-3">
+          <label class="col-md-2 pr-md-0 text-md-right mt-md-1" for="inlineFormCustomSelectPref">Work Email<span><i class="fas fa-lock ml-1 text-danger" data-toggle="tooltip" data-placement="top" title="Private"></i></span> </label>
+<div class="col-md-10">
+  <input type="email" class="form-control">
+  <small class="form-text text-muted">
+      Find homes perfect for work trips by choosing the <strong>Trip type</strong> filter on your next search.<a href="#">Learn more</a>
+      </small>
+      
+</div>
+
+
+        </div>
+  </div>
+</div> -->
+
+<!-- WORK TRAVEL CARD ENDED -->
+<button class="btn btn-danger btn-lg mt-4 px-4">Save</button>
+</form>
+</div>
+</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- DASHBOARD SECTION -->
-
-
-
-
-
-<div style="height:100vh;"></div>
-
-
 <!-- FOOTER -->
 <footer id="myFooter" class="mt-4 setbakground">
         <div class="p-5">
@@ -409,14 +689,214 @@
       </footer>
       <!-- FOOTER -->
 
+<!-- LANGUAGE MODAL -->
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header dash">
+          Spoken Languages
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-secondary">
+       <small>What languages can you speak fluently? We have many international travelers who appreciate hosts who can speak their language.</small> 
+
+<div class="row mt-4">
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline">
+      <label class="custom-control-label" for="customControlInline">Bahasa Indonesia</label>
+    </div>
+
+
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline2">
+      <label class="custom-control-label" for="customControlInline2">Signed Langau</label>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline3">
+      <label class="custom-control-label" for="customControlInline3">Bahasa Indonesia</label>
+    </div>
+
+
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline4">
+      <label class="custom-control-label" for="customControlInline4">Signed Langau</label>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline5">
+      <label class="custom-control-label" for="customControlInline5">Bahasa Indonesia</label>
+    </div>
+
+
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline6">
+      <label class="custom-control-label" for="customControlInline6">Signed Langau</label>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline7">
+      <label class="custom-control-label" for="customControlInline7">Bahasa Indonesia</label>
+    </div>
+
+
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+      <input type="checkbox" class="custom-control-input" id="customControlInline8">
+      <label class="custom-control-label" for="customControlInline8">Signed Langau</label>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger px-3">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- LANGUAGE MODAL -->
+<!-- VTA NUMBER MODAL -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header dash">
+        <h6 class="modal-title" id="exampleModalLongTitle">VAT ID Number Verification</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <small class="text-secondary">
+          Note:All non-optional fields are required
+        </small>
+        <div class="mt-4 text-secondary">
+<form>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Member State</label>
+    <select class="form-control gender my-1 mr-sm-2" id="inlineFormCustomSelectPref234">
+      <option selected></option>
+      <option value="1">United State</option>
+      <option value="2">Austria</option>
+      <option value="3">Belgium</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">VAT Number</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name on Registration</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Address Line 1</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Address Line 2 <small>(Optional)</small></label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">City</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Province / Region</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Postal Code</label>
+    <input type="text" class="form-control">
+  </div>
+  <small class="text-muted">Verification may take up to 48 hours. You will receive an email to confirm verification status.</small>
+</form>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary px-3" data-dismiss="modal">Verify</button>
+        <button type="button" class="btn btn-danger px-3">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- VTA NUMBER MODAL -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
  <script>
  
+//  FOR TOOLTIPS
  $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
- 
+// FOR ADD USERS
+ $(function(){
+$('#add-contact').on('click',()=>{
+$('#add-users').fadeToggle();
+  
+})
+// FOR SHIPING
+$('#add-shipping').on('click',()=>{
+$('#add-shipping-users').fadeToggle();
+  
+})
+// FOR GUEST
+$('#add-guest').on('click',()=>{
+$('#add-guest-users').fadeToggle();
+  
+})
+// FOR THE ADDING PHONE
+$('#add-phone').on('click',()=>{
+$('#add-phone-users').fadeToggle();
+  
+})
+
+
+
+ })
+
+
+
+
  </script>
 </body>
 </html>

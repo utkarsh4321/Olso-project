@@ -15,6 +15,9 @@ DASHBOARD SECTION STYLE
 li{
 border:none;
 padding:.4rem 0;
+a{
+    color:#6c757d;
+}
 }
 
 
@@ -39,7 +42,59 @@ width:20%;
 .fa-lock{
     font-size:.7rem;
 }
+.fa-plus{
+    font-size: .8rem;
 }
+.add-btn{
+    font-size:.9rem;
+    cursor: pointer;
+}
+#add-phone{
+    cursor: pointer;
+
+    
+}
+
+}
+.dash{
+    background:#948f8f18;
+}
+
+/*----------------------
+
+PROFILE SECTION STYLE
+
+------------------------*/
+
+#profile{
+margin-top:6rem;
+min-height: 100vh;
+& h6{
+    font-weight: bolder;
+}
+& img{
+max-width:7rem; 
+
+height:7rem;
+}
+& .userid{
+    img{
+        max-width:1.5rem; 
+        height
+        :1.5rem;  
+    }
+
+}
+
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -50,8 +105,16 @@ width:20%;
         width:100%;
     }
 }
+.add-btn{
+    font-size:.8rem;
+    cursor: pointer;
+}
+#profile{
+margin-top:4rem;
 
 
+
+}
 
 }
 

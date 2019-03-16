@@ -153,8 +153,99 @@ height:100%;
 
 
 }
+// MEDIA QUERIES OF THE HOME PAGE
+@include mediasm (){
+    #showcase{
+        width: 100%;
+        height: 100%;
+       h1{
+           font-size:3rem;
+       }
+      
+      .hitman{
+          margin-top:7rem;
+          height: 100%;
+      }
+       
+    }
+    #earn-section{
+        margin-top:2rem;
+        & .collector{
+            margin-top:2rem;
+        }
+    }
+    
+    #featured-section{
+        margin-top:4rem;
+    
+        
+        }
+        #cut-edge{
+            width:100%;
+            height: 5rem;
+            background: #fff;
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 10vw),0 100%);
+            margin-bottom: -20vw;
+            }
+            #review-section{
+    
+                & img{
+                    max-width:6rem;
+                    height:6rem;
+                }
+                
+                }
+    
+    
+    
+    }
+@include mediamd(){
+    #showcase{
+        width: 100%;
+        height: 100%;
+       h1{
+           font-size:3rem;
+       }
+      
+      .hitman{
+          margin-top:7rem;
+          height: 100%;
+      }
+       
+    }
+    #earn-section{
+        margin-top:2rem;
+        & .collector{
+            margin-top:2rem;
+        }
+    }
+    
+    #featured-section{
+        margin-top:4rem;
+    
+        
+        }
+        #cut-edge{
+            width:100%;
+            height: 5rem;
+            background: #fff;
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 10vw),0 100%);
+            margin-bottom: -20vw;
+            }
+            #review-section{
+    
+                & img{
+                    max-width:6rem;
+                    height:6rem;
+                }
+                
+                }
+    
 
 
+
+
+}
 
 
 

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./footer/footer.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+ <!-- NAVBAR  -->
+ <nav class="navbar navbar-expand-md navbar-dark setbakground sticky-top">
+        <div class="container py-1">
+        <a class="navbar-brand" href="#">OLSO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Browse<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Become a Lender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Inbox</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+            <li class="d-flex" id="hove">
+
+    
+            <div class="nav-item border rounded-lg px-1 col-sm-6 text-center mx-md-2 mr-3 " data-toggle="modal" data-target="#exampleModal">
+              <a class="nav-link" href="#">Sign Up</a>
+            </div>
+            <div class="nav-item border rounded-lg px-2 col-sm-6 text-center mx-md-1"  data-toggle="modal" data-target="#exampleModal1">
+              <a class="nav-link" href="#">Log in</a>
+            </div>
+            
+        </li>
+          </ul>
+         
+          
+        </div>
+        </div>
+      </nav>
+
+    <!-- NAVBAR -->
+<!-- DASHBOARD SECTION -->
+<section id="dashboard" class="mt-5">
+<div class="container p-0 p-md-0">
+<div class="row mx-auto">
+<div class="col-md-3 mb-4">
+  <ul class="list-group text-secondary">
+    <li class="list-group-item">
+      <a href="./dashboard.html"><i class="fas fa-user-edit"></i><span class="ml-2">Edit Profile</span>
+      </a></li>
+    <li class="list-group-item">
+      <a href="./photos.html"><i class="fas fa-images"></i><span class="ml-2">Photos</span></a></li>
+    <li class="list-group-item"><a href="./trust.html">
+        <i class="fas fa-user-shield"></i><span class="ml-2">Trust and Verification</span>
+      </a></li>
+    <li class="list-group-item">
+      <a href="./reviews.html" class="actives"><i class="fas fa-eye"></i><span class="ml-2">Reviews</span></a></li>
+    <li class="list-group-item">
+      <a href="./reference.html"><i class="fas fa-address-card"></i><span class="ml-2">Reference</span></a></li>
+  </ul>
+  <a class="btn btn-block btn-outline-secondary mt-4" href="./profile.html">View Profile</a>
+</div>
+<div class="col-md-9">
+ 
+        <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><small class="text-secondary">Reviews About You</small></a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                     <small class="text-secondary"> Reviews By You</small></a>
+                  <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a> -->
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="card mt-4">
+                                <div class="card-header">
+                                  Past Reviews
+                                </div>
+                                <div class="card-body">
+                                  
+                                  <p class="card-text">Reviews are written at the end of a reservation through Airbnb. Reviews you’ve received will be visible both here and on your public profile.</p>
+                                <small class="text-secondary">No one has reviewed you yet.
+                                    </small>
+                                </div>
+                              </div>
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="card mt-4">
+                                <div class="card-header">
+                                        Reviews to Write
+                                </div>
+                                <div class="card-body">
+                                  
+                                <small class="text-secondary">Nobody to review right now. Looks like it’s time for another trip!</small>
+                                  
+                                </div>
+                              </div>
+                        <div class="card mt-4">
+                                <div class="card-header">
+                                        Past Reviews You’ve Written
+
+                                </div>
+                                <div class="card-body">
+                                  
+                                <small class="text-secondary">You have not written any reviews yet.</small>
+                                  
+                                </div>
+                              </div>
+                </div>
+                <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div> -->
+              </div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+<div style="height:50vh;"></div>
+<!-- FOOTER -->
+<footer id="myFooter" class="mt-4 setbakground">
+        <div class="p-5">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h1 class="logo" style="margin-top:30px;"><a href="#">&nbsp;OlSO&nbsp;</a></h1>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Log In<br></a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Other Links</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h5>Our Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Company Information<br></a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Desk<br></a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">External Links</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 social-networks">
+                    <div></div><a href="#" class="facebook"><i class="fab fa-facebook"></i></a><a href="#" class="twitter"><i class="fab fa-twitter"></i></a><a href="#" class="google"><i class="fab fa-google-plus"></i></a><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <button
+                        class="btn btn-outline-light" type="button">Contact us</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row footer-copyright" style="background:#062f83">
+          <div class="container p-3">
+          <div class="d-md-flex justify-content-between align-items-center">
+              <div class="align-self-center">Copyright &copy; 2019</div>
+              <a href="#">OSLO</a>
+          </div>
+          </div>
+      </div>
+      </footer>
+      <!-- FOOTER -->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+ <script>
+ 
+//  FOR TOOLTIPS
+ $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+// FOR ADD USERS
+ $(function(){
+$('#add-contact').on('click',()=>{
+$('#add-users').fadeToggle();
+  
+})
+// FOR SHIPING
+$('#add-shipping').on('click',()=>{
+$('#add-shipping-users').fadeToggle();
+  
+})
+// FOR GUEST
+$('#add-guest').on('click',()=>{
+$('#add-guest-users').fadeToggle();
+  
+})
+// FOR THE ADDING PHONE
+$('#add-phone').on('click',()=>{
+$('#add-phone-users').fadeToggle();
+  
+})
+
+
+
+ })
+
+
+
+
+ </script>
+</body>
+</html>

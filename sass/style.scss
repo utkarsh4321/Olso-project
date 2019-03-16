@@ -32,11 +32,19 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+// -----------------------//
+    // NAVBAR STYLING
+//-------------------------//
+
+#navbars ul .hoves:hover{
+border-bottom: 4px solid #fff;
 
 
 
-
-
+}
+#navbars button{
+  color:red;
+}
 
 
 
