@@ -114,14 +114,37 @@ font-size: .8rem;
         :1.5rem;  
     }
 }
+& label.btn{
+    cursor: pointer;
+    }
+
 }
 ul{
     list-style: none;
+    margin:0;
+    padding:0;
+}
+li{
+    margin:0;
+    padding:0;
 }
 
+// DOCUMENT MANAGEMANT SECTION STARTED
+#docuser{
+img{
+    max-width:5rem;
+}
+    & .userid{
+        img{
+            max-width:1.5rem; 
+            height
+            :1.5rem;  
+        }
+
+    }
 
 
-
+}
 
 
 
