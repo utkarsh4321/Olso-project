@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Notification</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./footer/footer.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-md navbar-dark setbakground sticky-top">
+      <div class="container py-1">
+        <a class="navbar-brand" href="#">OLSO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Browse<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Become a Lender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Inbox</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="d-flex" id="hove">
+              <div
+                class="nav-item border rounded-lg px-1 col-sm-6 text-center mx-md-2 mr-3 "
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <a class="nav-link" href="#">Sign Up</a>
+              </div>
+              <div
+                class="nav-item border rounded-lg px-2 col-sm-6 text-center mx-md-1"
+                data-toggle="modal"
+                data-target="#exampleModal1"
+              >
+                <a class="nav-link" href="#">Log in</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR -->
+    <!-- DASHBOARD SECTION -->
+    <section id="dashboard" class="mt-5">
+      <div class="container p-0 p-md-0">
+        <div class="row mx-auto">
+          <div class="col-md-3 mb-4">
+            <ul class="list-group text-secondary">
+              <li class="list-group-item actives">
+                <a href="./dashboard.html"
+                  ><i class="fas fa-user-edit"></i
+                  ><span class="ml-2">Edit Profile</span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="./photos.html"
+                  ><i class="fas fa-images"></i
+                  ><span class="ml-2">Photos</span></a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="./trust.html" class="actives">
+                  <i class="fas fa-user-shield"></i
+                  ><span class="ml-2">Trust and Verification</span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="./reviews.html"
+                  ><i class="fas fa-eye"></i
+                  ><span class="ml-2">Reviews</span></a
+                >
+              </li>
+              <li class="list-group-item">
+                <a href="./reference.html"
+                  ><i class="fas fa-address-card"></i
+                  ><span class="ml-2">Reference</span></a
+                >
+              </li>
+            </ul>
+            <a
+              class="btn btn-block btn-outline-secondary mt-4"
+              href="./profile.html"
+              >View Profile</a
+            >
+          </div>
+          <div class="col-md-9">
+            <!-- <div class="card">
+    
+    <div class="card-body">
+
+<div class="mt-3">
+    <h6>Be ready to book</h6>
+    <div class="row">
+        
+        <div class="col-md-8 mb-3">
+
+
+
+    <small class="text-secondary">You’ll need to provide identification before you book, so get a head start by doing it now. Learn more</small>
+</div>
+<div class="col-md-4">
+<button class="btn btn-danger flex-end mx-md-5 mt-0">Provide ID</button>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+            <form>
+              <!-- NEW CARD STARTED -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      Requests
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        Receive messages from hosts and guests, including
+                        booking requests.
+                      </div>
+                      <hr />
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck1"
+                        />
+                        <label class="form-check-label" for="exampleCheck1"
+                          ><strong>Email</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck2"
+                        />
+                        <label class="form-check-label" for="exampleCheck2"
+                          ><strong>Push notification</strong></label
+                        >
+
+                        <div class="text-muted small">
+                          To your mobile or tablet device
+                        </div>
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck3"
+                        />
+                        <label class="form-check-label" for="exampleCheck3"
+                          ><strong>Text messages</strong></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-md-0 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      Contact Information
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        This information can be edited from your profile page.
+                        Edit Profile
+                      </div>
+                      <hr />
+                      <div class="mb-3 mt-4">
+                        <h6>Email:</h6>
+                        <small class="text-secondary">example@gmail.com</small>
+                      </div>
+                      <div class="mb-2">
+                        <h6>Phone number:</h6>
+                        <small class="text-secondary">12356933</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Text Message Area -->
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      Reminders
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        Receive booking reminders, requests to write a review,
+                        pricing notices, and other reminders related to your
+                        activities on Airbnb.
+                      </div>
+                      <hr />
+                      <div class="form-group form-check mb-3 mt-4">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleChecking"
+                        />
+                        <label class="form-check-label" for="exampleChecking"
+                          ><strong>Email</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck10"
+                        />
+                        <label class="form-check-label" for="exampleCheck10"
+                          ><strong>Push notification</strong></label
+                        >
+
+                        <div class="text-muted small">
+                          To your mobile or tablet device
+                        </div>
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck12"
+                        />
+                        <label class="form-check-label" for="exampleCheck12"
+                          ><strong>Text messages</strong></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      Text Messages
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        By checking the Text messages box you agree to receive
+                        autodialed promotional texts from Airbnb and its
+                        partners at the phone number below.
+                      </div>
+                      <div class="mt-3">
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1" class="small"
+                            >Receive SMS notifications to:</label
+                          >
+                          <select
+                            class="form-control text-secondary"
+                            id="exampleFormControlSelect1"
+                          >
+                            <option>+91********23</option>
+                          </select>
+                        </div>
+                      </div>
+                      <hr />
+                      <div>
+                        <strong>Note:</strong>
+                        <span class="text-secondary smaller">
+                          For more information, text HELP to 247262. To cancel
+                          mobile notifications, reply STOP to 247262. Message
+                          and Data rates may apply.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text Message Area ended -->
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="card">
+                    <div class="card-header">
+                      Promotions and tips
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        Receive coupons, promotions, surveys, product updates,
+                        and inspiration from Airbnb and its partners.
+                      </div>
+                      <hr />
+                      <div class="form-group form-check mb-3 mt-4">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheckings"
+                        />
+                        <label class="form-check-label" for="exampleCheckings"
+                          ><strong>Email</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck102"
+                        />
+                        <label class="form-check-label" for="exampleCheck102"
+                          ><strong>Push notification</strong></label
+                        >
+
+                        <div class="text-muted small">
+                          To your mobile or tablet device
+                        </div>
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck122"
+                        />
+                        <label class="form-check-label" for="exampleCheck122"
+                          ><strong>Text messages</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck123"
+                        />
+                        <label class="form-check-label" for="exampleCheck123"
+                          ><strong>Phone calls</strong></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      Policy and community
+                    </div>
+                    <div class="card-body">
+                      <div class="text-dark small">
+                        Receive updates on home sharing regulations and stay
+                        informed about advocacy efforts to create fair,
+                        responsible home sharing laws in your community.
+                      </div>
+                      <hr />
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleChecking127"
+                        />
+                        <label class="form-check-label" for="exampleChecking127"
+                          ><strong>Email</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck128"
+                        />
+                        <label class="form-check-label" for="exampleCheck128"
+                          ><strong>Push notification</strong></label
+                        >
+
+                        <div class="text-muted small">
+                          To your mobile or tablet device
+                        </div>
+                      </div>
+                      <div class="form-group form-check mb-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck129"
+                        />
+                        <label class="form-check-label" for="exampleCheck129"
+                          ><strong>Text messages</strong></label
+                        >
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck130"
+                        />
+                        <label class="form-check-label" for="exampleCheck130"
+                          ><strong>Phone calls</strong></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-4">
+                <div class="card-header">
+                  Account support
+                </div>
+                <div class="card-body">
+                  <div class="text-dark small">
+                    We may need to send you messages regarding your account,
+                    your trips, legal notifications, security and privacy
+                    matters, and customer support requests. For your security
+                    you cannot disable email notifications and we may contact
+                    you by phone or other means if needed.
+                  </div>
+                  <hr />
+
+                  <div class="form-group form-check mb-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleChecking1273"
+                    />
+                    <label class="form-check-label" for="exampleChecking1273"
+                      ><strong>Email</strong></label
+                    >
+                  </div>
+                  <div class="form-group form-check mb-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1285"
+                    />
+                    <label class="form-check-label" for="exampleCheck1285"
+                      ><strong>Push notification</strong></label
+                    >
+
+                    <div class="text-muted small">
+                      To your mobile or tablet device
+                    </div>
+                  </div>
+                  <div class="form-group form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1298"
+                    />
+                    <label class="form-check-label" for="exampleCheck1298"
+                      ><strong>Text messages</strong></label
+                    >
+                  </div>
+                  <!-- <div class="form-group form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck130">
+                <label class="form-check-label" for="exampleCheck130"><strong>Phone calls</strong></label>
+              </div> -->
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-danger btn-lg mt-4">
+                Save
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="myFooter" class="mt-4 setbakground">
+      <div class="p-5">
+        <div class="row text-center">
+          <div class="col-12 col-sm-6 col-md-3">
+            <h1 class="logo" style="margin-top:30px;">
+              <a href="#">&nbsp;OlSO&nbsp;</a>
+            </h1>
+          </div>
+          <div class="col-12 col-sm-6 col-md-2">
+            <h5>Get started</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="#">Log In<br /></a>
+              </li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Other Links</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-2">
+            <h5>Our Company</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li>
+                <a href="#">Company Information<br /></a>
+              </li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-2">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li>
+                <a href="#">Help Desk<br /></a>
+              </li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">External Links</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 social-networks">
+            <div></div>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a
+            ><a href="#" class="twitter"><i class="fab fa-twitter"></i></a
+            ><a href="#" class="google"><i class="fab fa-google-plus"></i></a
+            ><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <button class="btn btn-outline-light" type="button">
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-copyright" style="background:#062f83">
+        <div class="container p-3">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <div class="align-self-center">Copyright &copy; 2019</div>
+            <a href="#">OSLO</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+      //  FOR TOOLTIPS
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      // FOR ADD USERS
+      $(function() {
+        $("#add-contact").on("click", () => {
+          $("#add-users").fadeToggle();
+        });
+        // FOR SHIPING
+        $("#add-shipping").on("click", () => {
+          $("#add-shipping-users").fadeToggle();
+        });
+        // FOR GUEST
+        $("#add-guest").on("click", () => {
+          $("#add-guest-users").fadeToggle();
+        });
+        // FOR THE ADDING PHONE
+        $("#add-phone").on("click", () => {
+          $("#add-phone-users").fadeToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
