@@ -116,134 +116,34 @@
 
     <!-- NAVBAR -->
     <!-- PROFILE SECTION -->
-    <section id="userprofile">
+    <section id="dashboard"  class="mt-5">
       <div class="container">
-        <!-- NOTIFICATION SECTION -->
-        <div
-          class="alert alert-success alert-dismissible fade show pr-3"
-          role="alert"
-        >
-          <div class="pb-3">
-            <div>
-              <div class="row mt-3">
-                <div class="col-md-2 col-sm-2 text-center">
-                  <i
-                    class="fas fa-rupee-sign"
-                    style="font-size:6rem; color: rgba(74, 165, 74, 0.534);"
-                  ></i>
-                </div>
-                <div class="col-md-10 col-sm-10 text-center text-md-left">
-                  <h5 class="mt-3 mt-md-0 text-dark font-weight-bolder">
-                    Earn
-                    <span
-                      ><i
-                        class="fas fa-rupee-sign"
-                        style="font-size:.9rem;"
-                      ></i></span
-                    >4,100 travel credit
-                  </h5>
-
-                  <p class="text-center text-md-left">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
-                    quasi itaque fugiat, sit libero ducimus?
-                  </p>
-
-                  <div>
-                    <button class="btn btn-success">Invite Friends</button>
-                    <button class="btn btn-light ml-2">Later</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="alert"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- NOTIFICATION SECTION ENDED -->
+        
+        
         <div class="row">
-          <div class="col-md-3">
-            <div class="card" id="docuser">
-              <div class="d-flex justify-content-center align-items-center p-4">
-                <img
-                  src="./image/user_pic-225x225.png"
-                  class="card-img-top rounded-circle"
-                  alt="users"
-                />
-              </div>
-              <div class="text-center">
-                <h5 class="text-dark font-weight-bolder">Vishal Anand</h5>
-                <p class="text-secondary">9871205664</p>
-                <small class="text-muted">example123@gmail.com</small>
-              </div>
-              <hr class="mx-3 my-1" />
-              <div class="card-body userid">
-                <div class="text-secondary d-flex">
-                  <img
-                    src="https://img.icons8.com/flat_round/64/000000/delete-sign.png"
-                    class="align-self-center"
-                  />
-                  <div class="align-self-center mx-1">Email Address</div>
-                </div>
 
-                <div class="mt-3 text-secondary d-flex">
-                  <img
-                    src="./image/10-512.png"
-                    alt="check"
-                    class="align-self-center"
-                  />
-                  <div class="align-self-center mx-1">Phone number</div>
-                </div>
-              </div>
-            </div>
-            <!-- VERIFY SECTION -->
-            <div class="card border mt-3">
-              <!-- <div class="card-header">
-      Verification info
-    </div> -->
-              <div class="card-body pr-1">
-                <div class="d-flex">
-                  <span><i class="fas fa-wallet fa-2x"></i></span>
-                  <small class="ml-3"
-                    >Link to Pay TM Wallet while Olso for faster refunds!</small
-                  >
-                </div>
-                <!-- <ul class="p-0 m-0">
-            <li class="d-flex justify-content-between mb-3"><a href="#" class="text-dark">Email address</a> <img src="./image/10-512.png" alt="check" class="align-self-center" style="max-width:1.5rem;"></li>
-            <li class="d-flex justify-content-between mb-3"><a href="#" class="text-dark">Phone Number</a> <img src="./image/10-512.png" alt="check" class="align-self-center" style="max-width:1.5rem;"></li>
-            <a href="#" class="text-dark">Verify more info</a>
-          </ul> -->
-              </div>
-            </div>
-            <div class="card border mt-3">
-              <div class="card-header">
-                Quick Links
-              </div>
-              <div class="card-body">
-                <ul class="p-0 m-0">
-                  <li class="mb-3">
-                    <a href="#" class="text-dark">Upcoming Trips</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-dark">Hosting on Airbnb</a>
-                  </li>
-                  <li class=" mb-3">
-                    <a href="#" class="text-dark">Travelling on Airbnb</a>
-                  </li>
-                  <li class="d-flex mb-3">
-                    <a href="#" class="text-dark">Help center</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-md-3">
+            <ul class="list-group text-secondary">
+              <li class="list-group-item">
+                <a href="./dashboard.html"><i class="fas fa-user-edit"></i><span class="ml-2">Edit Profile</span>
+                </a></li>
+              <li class="list-group-item">
+                <a href="./photos.html"><i class="fas fa-images"></i><span class="ml-2">Photos</span></a></li>
+              <li class="list-group-item"><a href="./trust.html">
+                  <i class="fas fa-user-shield"></i><span class="ml-2">Trust and Verification</span>
+                </a></li>
+              <li class="list-group-item">
+                <a href="./reviews.html"><i class="fas fa-eye"></i><span class="ml-2">Reviews</span></a></li>
+              <li class="list-group-item">
+                <a href="./reference.html"><i class="fas fa-address-card"></i><span class="ml-2">Reference</span></a></li>
+                <li class="list-group-item">
+                    <a href="./documentman.html" class="actives"><i class="fas fa-user-check"></i><span class="ml-2">Document management</span></a></li>
+            </ul>
+            <a class="btn btn-block btn-outline-secondary mt-4" href="./profile.html">View Profile</a>
 
             <!-- VERIFY SECTION -->
           </div>
+
           <div class="col-md-9 mt-3 mt-md-0">
             <div class="verify card mt-4 mb-4 d-none">
               <div class="card-body text-center">
@@ -512,10 +412,13 @@
       <div class="form-group fg_3"> 
         <input type="text" class="form-control" placeholder="Anwser here:">
       </div>  -->
-                      <div class="mb-5">
+                      <div class="mb-3">
                         <button class="btn btn-lg btn-danger">
-                          Click to take the shots
+                          Click to take the selfie
                         </button>
+                      </div>
+                      <div>
+                      <button class="btn btn-info text-center mb-4">Skip</button>
                       </div>
                       <button
                         type="button"
@@ -548,46 +451,20 @@ Driving License
               </div>
             </div>
 
-            <div class="card mt-3 p-0">
-              <div class="card-body p-2 px-3">
-                <div class="mt-3">
-                  <div class="row">
-                    <div class="col-md-8 mb-3">
-                      <h6 class="font-weight-bolder">
-                        Invite friends, earn travel credit
-                      </h6>
-
-                      <small class="text-secondary"
-                        >Earn up to
-                        <span
-                          ><i
-                            class="fas fa-rupee-sign"
-                            style="font-size:.9rem;"
-                          ></i></span
-                        >4,300 for everyone you Invite</small
-                      >
-                    </div>
-                    <div class="col-md-4">
-                      <button class="btn btn-danger flex-end">
-                        Invite Friends
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card border mt-3">
-              <div class="card-header">
-                Messages (0 new)
-              </div>
+            <div class="card mt-3">
               <div class="card-body">
-                <small class="text-secondary"
-                  >Nobody to review right now. Looks like it’s time for another
-                  trip!</small
-                >
-              </div>
-            </div>
+                
+                  
+                      <h4 class="font-weight-bolder text-center">
+                        Verify Selfie
+                      </h4>
+
+          
+                
+              
+            
+
+            
           </div>
         </div>
       </div>
